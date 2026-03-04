@@ -1,0 +1,1880 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camila Cabaña | Lic. en Psicología</title>
+  <meta name="description"
+    content="Evaluaciones neurocognitivas y acompañamiento psicopedagógico para niños y adolescentes. Atención profesional en Río Grande, Tierra del Fuego.">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta property="og:title" content="Camila Cabaña | Lic. en Psicología">
+  <meta property="og:description"
+    content="Lic. en Psicología. Evaluación neurocognitiva infantil y adolescente. Enfoque integrador y trabajo interdisciplinario.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://example.com/camila-cabana.webp">
+  <meta property="og:url" content="https://example.com/">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Camila Cabaña licenciada en psicología">
+  <link rel="canonical" href="https://example.com/">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "Psychologist",
+   "name": "Camila Cabaña",
+   "jobTitle": "Licenciada en Psicología",
+   "areaServed": "Río Grande, Tierra del Fuego, Argentina",
+   "telephone": "+54 9 2964 630915",
+   "email": "camilacabana05@gmail.com",
+   "availableService": [
+     "Evaluación Neurocognitiva",
+     "Evaluación Psicopedagógica",
+     "Acompañamiento TDAH",
+     "Abordaje de Dislexia"
+   ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --mauve: #9B72AA;
+      --mauve-light: #C5A8CE;
+      --mauve-soft: #EDE0F2;
+      --mauve-dark: #6C4E7A;
+      --sage: #8FAF8A;
+      --sage-light: #D2E8CF;
+      --cream: #FAF7F5;
+      --text: #2A2A2A;
+      --text-soft: #5C5C6E;
+      --white: #FFFFFF;
+      --radius: 1.25rem;
+      --shadow-sm: 0 12px 40px rgba(0, 0, 0, .08);
+      --shadow-md: 0 10px 40px rgba(0, 0, 0, .06);
+      --shadow-lg: 0 20px 60px rgba(107, 78, 122, .22);
+      --transition: all .35s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* ── SCROLLBAR ─────────────────────────────── */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--cream);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--mauve-light);
+      border-radius: 10px;
+    }
+
+    /* ── NAV ───────────────────────────────────── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 0 2rem;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(250, 247, 245, .85);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(155, 114, 170, .12);
+      transition: var(--transition);
+    }
+
+    nav.scrolled {
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      text-decoration: none;
+    }
+
+    .nav-brand-dot {
+      width: 10px;
+      height: 10px;
+      background: var(--mauve);
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px rgba(155, 114, 170, .25);
+    }
+
+    .nav-brand span {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.2rem;
+      color: var(--mauve-dark);
+      letter-spacing: -.3px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: .875rem;
+      font-weight: 500;
+      color: var(--text-soft);
+      text-decoration: none;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      right: 100%;
+      height: 2px;
+      background: var(--mauve);
+      border-radius: 2px;
+      transition: right .3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--mauve);
+    }
+
+    .nav-links a:hover::after {
+      right: 0;
+    }
+
+    .nav-cta {
+      background: var(--mauve);
+      color: var(--white) !important;
+      padding: .5rem 1.4rem;
+      border-radius: 50px;
+      font-weight: 600 !important;
+      font-size: .875rem;
+      transition: var(--transition);
+      box-shadow: 0 4px 14px rgba(155, 114, 170, .4);
+    }
+
+    .nav-cta:hover {
+      background: var(--mauve-dark) !important;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(155, 114, 170, .5);
+    }
+
+    .nav-cta::after {
+      display: none !important;
+    }
+
+    /* hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--mauve-dark);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    /* ── HERO ──────────────────────────────────── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 100px 2rem 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: .55;
+      pointer-events: none;
+    }
+
+    .hero-blob-1 {
+      width: 520px;
+      height: 520px;
+      background: radial-gradient(circle, #C5A8CE 0%, transparent 70%);
+      top: -120px;
+      right: -80px;
+    }
+
+    .hero-blob-2 {
+      width: 380px;
+      height: 380px;
+      background: radial-gradient(circle, #D2E8CF 0%, transparent 70%);
+      bottom: 0;
+      left: -60px;
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: var(--mauve-soft);
+      color: var(--mauve-dark);
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: .35rem 1rem;
+      border-radius: 50px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-badge i {
+      font-size: .75rem;
+    }
+
+    .hero-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--mauve);
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--text-soft);
+      line-height: 1.75;
+      margin-bottom: 2rem;
+      max-width: 460px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      background: var(--mauve);
+      color: var(--white);
+      padding: .9rem 2rem;
+      border-radius: 50px;
+      font-size: .95rem;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(155, 114, 170, .45);
+      transition: all .25s ease;
+    }
+
+    .btn-primary:hover {
+      background: var(--mauve-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+    }
+
+    .microcopy {
+      display: block;
+      font-size: .75rem;
+      color: var(--text-soft);
+      margin-top: .6rem;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .microcopy i {
+      color: var(--sage);
+      margin-right: .3rem;
+    }
+
+    .cta-trust {
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .78rem;
+      color: #6b7280;
+      margin-top: .6rem;
+    }
+
+    .cta-trust i {
+      color: #25D366;
+      font-size: .8rem;
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      color: var(--mauve-dark);
+      font-size: .95rem;
+      font-weight: 600;
+      text-decoration: none;
+      padding: .9rem 1.6rem;
+      border-radius: 50px;
+      border: 1.5px solid var(--mauve-light);
+      transition: all .25s ease;
+    }
+
+    .btn-ghost:hover {
+      background: var(--mauve-soft);
+      border-color: var(--mauve);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.8rem;
+      color: var(--mauve-dark);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: .78rem;
+      color: var(--text-soft);
+      margin-top: .2rem;
+    }
+
+    /* photo card */
+    .hero-photo-wrap {
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero-photo-card {
+      position: relative;
+      width: 360px;
+      height: 440px;
+    }
+
+    .hero-photo-bg {
+      position: absolute;
+      inset: 0;
+      border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%;
+      background: linear-gradient(135deg, var(--mauve-soft) 0%, var(--sage-light) 100%);
+      animation: morphBlob 8s ease-in-out infinite;
+    }
+
+    @keyframes morphBlob {
+
+      0%,
+      100% {
+        border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%;
+      }
+
+      25% {
+        border-radius: 45% 55% 40% 60% / 60% 40% 55% 45%;
+      }
+
+      50% {
+        border-radius: 50% 50% 60% 40% / 45% 60% 40% 55%;
+      }
+
+      75% {
+        border-radius: 55% 45% 50% 50% / 55% 45% 55% 45%;
+      }
+    }
+
+    .hero-photo-img {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 310px;
+      height: 385px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 2rem 2rem 0 0;
+      filter: drop-shadow(0 20px 40px rgba(107, 78, 122, .25));
+    }
+
+    .hero-photo-pill {
+      position: absolute;
+      background: var(--white);
+      border-radius: 50px;
+      padding: .65rem 1.1rem;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      align-items: center;
+      gap: .55rem;
+      font-size: .78rem;
+      font-weight: 600;
+      color: var(--text);
+      white-space: nowrap;
+      animation: floatPill 4s ease-in-out infinite;
+    }
+
+    .hero-photo-pill i {
+      color: var(--mauve);
+      font-size: .9rem;
+    }
+
+    .pill-1 {
+      top: 30px;
+      right: -10px;
+      animation-delay: 0s;
+    }
+
+    .pill-2 {
+      bottom: 60px;
+      left: -20px;
+      animation-delay: 1.5s;
+    }
+
+    @keyframes floatPill {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    /* ── SECTION UTILS ─────────────────────────── */
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--mauve);
+      margin-bottom: .75rem;
+    }
+
+    .section-tag::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 2px;
+      background: var(--mauve);
+      border-radius: 2px;
+    }
+
+    .section-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      color: var(--text);
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .section-title em {
+      color: var(--mauve);
+      font-style: italic;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      color: var(--text-soft);
+      line-height: 1.75;
+      max-width: 560px;
+    }
+
+    /* ── ABOUT ─────────────────────────────────── */
+    .about {
+      padding: 120px 2rem;
+      background: var(--white);
+    }
+
+    .about-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .about-img-wrap {
+      position: relative;
+    }
+
+    .about-img-frame {
+      width: 100%;
+      aspect-ratio: 4/5;
+      border-radius: 2rem;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      background: var(--mauve-soft);
+    }
+
+    .about-img-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .about-accent {
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      border: 3px solid var(--mauve-light);
+      border-radius: 1.5rem;
+      bottom: -20px;
+      right: -20px;
+      z-index: -1;
+    }
+
+    .about-card-float {
+      position: absolute;
+      top: -18px;
+      left: -22px;
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      box-shadow: var(--shadow-md);
+    }
+
+    .about-card-float .icon-wrap {
+      width: 40px;
+      height: 40px;
+      background: var(--mauve-soft);
+      border-radius: .75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--mauve);
+      font-size: 1rem;
+      margin-bottom: .5rem;
+    }
+
+    .about-card-float p {
+      font-size: .75rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .about-card-float span {
+      font-size: .68rem;
+      color: var(--text-soft);
+    }
+
+    .about-text p {
+      font-size: 1rem;
+      color: var(--text-soft);
+      line-height: 1.85;
+      margin-bottom: 1.2rem;
+    }
+
+    .about-perks {
+      display: flex;
+      flex-direction: column;
+      gap: .9rem;
+      margin-top: 1.8rem;
+    }
+
+    .perk {
+      display: flex;
+      align-items: flex-start;
+      gap: .85rem;
+    }
+
+    .perk-icon {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      background: var(--mauve-soft);
+      border-radius: .75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--mauve);
+      font-size: .9rem;
+    }
+
+    .perk-text strong {
+      display: block;
+      font-size: .9rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .perk-text span {
+      font-size: .82rem;
+      color: var(--text-soft);
+    }
+
+    /* ── SERVICES ──────────────────────────────── */
+    .services {
+      padding: 120px 2rem;
+      background: linear-gradient(180deg, var(--cream) 0%, var(--mauve-soft) 100%);
+    }
+
+    .services-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .services-head {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 2.2rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(155, 114, 170, .1);
+      transition: all .35s cubic-bezier(.4, 0, .2, 1);
+      position: relative;
+      overflow: hidden;
+      cursor: default;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--mauve) 0%, var(--sage) 100%);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .4s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, .12);
+    }
+
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .service-icon {
+      width: 54px;
+      height: 54px;
+      background: var(--mauve-soft);
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      color: var(--mauve);
+      margin-bottom: 1.4rem;
+      transition: var(--transition);
+    }
+
+    .service-card:hover .service-icon {
+      background: var(--mauve);
+      color: var(--white);
+    }
+
+    .service-card h4 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.125rem;
+      color: var(--text);
+      margin-bottom: .7rem;
+    }
+
+    .service-card p {
+      font-size: .875rem;
+      color: var(--text-soft);
+      line-height: 1.7;
+    }
+
+    .service-tag {
+      display: inline-block;
+      margin-top: 1.2rem;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .05em;
+      color: var(--mauve);
+      background: var(--mauve-soft);
+      padding: .2rem .75rem;
+      border-radius: 50px;
+    }
+
+    /* ── PROCESS ───────────────────────────────── */
+    .process {
+      padding: 120px 2rem;
+      background: var(--white);
+    }
+
+    .process-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .process-head {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .process-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .process-step {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: 1.5rem;
+      padding-bottom: 2.5rem;
+      position: relative;
+    }
+
+    .process-step:not(:last-child) .step-number::after {
+      content: '';
+      position: absolute;
+      top: 60px;
+      left: 29px;
+      width: 2px;
+      height: calc(100% - 30px);
+      background: linear-gradient(180deg, var(--mauve-light) 0%, transparent 100%);
+    }
+
+    .step-number {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      background: var(--mauve-soft);
+      border-radius: 50%;
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.2rem;
+      color: var(--mauve-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 2px solid var(--mauve-light);
+    }
+
+    .step-content {
+      padding-top: .8rem;
+    }
+
+    .step-content h4 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: .4rem;
+    }
+
+    .step-content p {
+      font-size: .9rem;
+      color: var(--text-soft);
+      line-height: 1.7;
+    }
+
+    /* ── TESTIMONIALS ──────────────────────────── */
+    .testimonials {
+      padding: 120px 2rem;
+      background: linear-gradient(135deg, var(--mauve-dark) 0%, #5A3A6A 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .testimonials::before {
+      content: '"';
+      position: absolute;
+      top: -60px;
+      left: 5%;
+      font-family: 'DM Serif Display', serif;
+      font-size: 28rem;
+      color: rgba(255, 255, 255, .04);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .testimonials-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .testimonials-head {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .testimonials-head .section-tag {
+      color: var(--mauve-light);
+    }
+
+    .testimonials-head .section-tag::before {
+      background: var(--mauve-light);
+    }
+
+    .testimonials-head .section-title {
+      color: var(--white);
+    }
+
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .testi-card {
+      background: rgba(255, 255, 255, .08);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: var(--radius);
+      padding: 2rem;
+      transition: var(--transition);
+    }
+
+    .testi-card:hover {
+      background: rgba(255, 255, 255, .13);
+      transform: translateY(-4px);
+    }
+
+    .testi-stars {
+      display: flex;
+      gap: 3px;
+      margin-bottom: 1rem;
+    }
+
+    .testi-stars i {
+      color: #F5C842;
+      font-size: .85rem;
+    }
+
+    .testi-card blockquote {
+      font-size: .9rem;
+      color: rgba(255, 255, 255, .85);
+      line-height: 1.75;
+      font-style: italic;
+      margin-bottom: 1.4rem;
+    }
+
+    .testi-author {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+    }
+
+    .testi-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: .85rem;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+
+    .testi-avatar.av1 {
+      background: linear-gradient(135deg, #C5A8CE, #9B72AA);
+    }
+
+    .testi-avatar.av2 {
+      background: linear-gradient(135deg, #8FAF8A, #5A8A55);
+    }
+
+    .testi-avatar.av3 {
+      background: linear-gradient(135deg, #A8BECE, #5A7A9B);
+    }
+
+    .testi-name {
+      font-weight: 600;
+      font-size: .85rem;
+      color: var(--white);
+      display: block;
+    }
+
+    .testi-role {
+      font-size: .75rem;
+      color: rgba(255, 255, 255, .5);
+    }
+
+    /* ── FAQ ───────────────────────────────────── */
+    .faq {
+      padding: 120px 2rem;
+      background: var(--cream);
+    }
+
+    .faq-inner {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .faq-head {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(155, 114, 170, .18);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      font-family: inherit;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.35rem 0;
+      cursor: pointer;
+      gap: 1rem;
+    }
+
+    .faq-question span {
+      font-size: .97rem;
+      font-weight: 600;
+      color: var(--text);
+      transition: color .25s;
+    }
+
+    .faq-question:hover span {
+      color: var(--mauve);
+    }
+
+    .faq-icon {
+      width: 30px;
+      height: 30px;
+      background: var(--mauve-soft);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--mauve);
+      font-size: .75rem;
+      transition: var(--transition);
+    }
+
+    .faq-item.open .faq-icon {
+      background: var(--mauve);
+      color: var(--white);
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .45s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 500px;
+    }
+
+    .faq-answer p {
+      font-size: .9rem;
+      color: var(--text-soft);
+      line-height: 1.75;
+      padding-bottom: 1.35rem;
+    }
+
+    /* ── CTA BAND ──────────────────────────────── */
+    .cta-band {
+      padding: 80px 2rem;
+      background: var(--white);
+      text-align: center;
+    }
+
+    .cta-band-inner {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .cta-band h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      color: var(--text);
+      margin-bottom: 1rem;
+      line-height: 1.25;
+    }
+
+    .cta-band h2 em {
+      color: var(--mauve);
+      font-style: italic;
+    }
+
+    .cta-band p {
+      font-size: 1rem;
+      color: var(--text-soft);
+      margin-bottom: 2.2rem;
+      line-height: 1.7;
+    }
+
+    .cta-band-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      background: #25D366;
+      color: var(--white);
+      padding: .9rem 2rem;
+      border-radius: 50px;
+      font-size: .95rem;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, .4);
+      transition: var(--transition);
+    }
+
+    .btn-wa:hover {
+      background: #1ebe5c;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(37, 211, 102, .5);
+    }
+
+    .btn-wa i {
+      font-size: 1.1rem;
+    }
+
+    /* ── UTILITIES ─────────────────────────────── */
+    .hero-actions-container {
+      margin-bottom: .8rem;
+    }
+
+    .hero-actions-col {
+      display: flex;
+      flex-direction: column;
+      width: max-content;
+      align-items: flex-start;
+    }
+
+    .align-start {
+      align-self: flex-start;
+    }
+
+    .margin-top-sm {
+      margin-top: .2rem;
+    }
+
+    .microcopy-left {
+      text-align: left;
+      margin-left: .5rem;
+    }
+
+    .mb-2rem {
+      margin-bottom: 2rem;
+    }
+
+    .mx-auto {
+      margin: 0 auto;
+    }
+
+    .color-white-75 {
+      color: rgba(255, 255, 255, .75);
+    }
+
+    .color-wa-green {
+      color: #25D366;
+    }
+
+    .white {
+      color: var(--white);
+    }
+
+    .justify-center {
+      justify-content: center;
+    }
+
+    .about-card-float-pos {
+      left: -22px;
+      top: -18px;
+    }
+
+    /* ── FOOTER ────────────────────────────────── */
+    footer {
+      background: var(--text);
+      color: rgba(255, 255, 255, .55);
+      padding: 2rem;
+      text-align: center;
+      font-size: .82rem;
+    }
+
+    footer a {
+      color: var(--mauve-light);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--white);
+    }
+
+    /* ── WA FLOAT ──────────────────────────────── */
+    .wa-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25D366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+      z-index: 999;
+      text-decoration: none;
+      animation: pulse-wa 2.5s ease-in-out infinite;
+      transition: var(--transition);
+    }
+
+    .wa-float:hover {
+      transform: scale(1.12);
+      box-shadow: 0 8px 30px rgba(37, 211, 102, .65);
+    }
+
+    @keyframes pulse-wa {
+
+      0%,
+      100% {
+        box-shadow: 0 6px 24px rgba(37, 211, 102, .5), 0 0 0 0 rgba(37, 211, 102, .35);
+      }
+
+      50% {
+        box-shadow: 0 6px 24px rgba(37, 211, 102, .5), 0 0 0 14px rgba(37, 211, 102, 0);
+      }
+    }
+
+    /* ── REVEAL ANIMATIONS ─────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all .8s cubic-bezier(.22, .61, .36, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── RESPONSIVE ────────────────────────────── */
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-photo-wrap {
+        display: none;
+      }
+
+      .hero-actions {
+        justify-content: center;
+      }
+
+      .hero-stats {
+        justify-content: center;
+      }
+
+      .hero-desc {
+        margin: 0 auto 2rem;
+      }
+
+      .about-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .about-img-wrap {
+        display: none;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .testi-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 72px;
+        right: 0;
+        left: 0;
+        background: var(--white);
+        flex-direction: column;
+        padding: 1.5rem 0;
+        gap: 1.5rem;
+        display: none;
+        box-shadow: var(--shadow-sm);
+        align-items: center;
+        z-index: 99;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 90px 1.5rem 50px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .cta-band-actions {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn-primary {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .btn-ghost {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    /* ── SERVICE CARD IMAGES ANIMATION & HOVER ── */
+    .service-card img {
+      transition: transform .6s ease;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, .06);
+      opacity: 0;
+      transform: translateY(10px);
+      animation: imgFade .8s ease forwards;
+    }
+
+    .service-card:hover img {
+      transform: scale(1.05);
+    }
+
+    @keyframes imgFade {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ── NAV ──────────────────────────────────────── -->
+  <nav id="navbar">
+    <a class="nav-brand" href="#">
+      <span class="nav-brand-dot"></span>
+      <span>Cami Cabaña</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#proceso">¿Cómo funciona?</a></li>
+      <li><a href="#faq">Preguntas</a></li>
+      <li><a href="#contacto" class="nav-cta">Solicitar turno</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────── -->
+  <header class="hero" id="inicio">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <i aria-hidden="true" class="fa-solid fa-graduation-cap"></i>
+          Lic. en Psicología — Río Grande, TDF
+        </div>
+        <h1 class="hero-title">
+          Evaluación y acompañamiento psicopedagógico para <em>niños y adolescentes</em>
+        </h1>
+        <p class="hero-desc">
+          Ayudo a comprender y abordar dificultades de aprendizaje, atención y desarrollo mediante evaluaciones
+          profesionales y estrategias personalizadas.
+        </p>
+        <div class="hero-actions hero-actions-container">
+          <div class="hero-actions-col">
+            <a href="https://wa.me/5492964630915?text=Hola%20Camila,%20vi%20tu%20p%C3%A1gina%20y%20quisiera%20consultar%20por%20una%20evaluaci%C3%B3n%20para%20mi%20hijo."
+              target="_blank" rel="noopener noreferrer" class="btn-primary" id="hero-cta-main">
+              <i aria-hidden="true" class="fa-brands fa-whatsapp"></i> Consultar por evaluación
+            </a>
+            <div class="cta-trust">
+              <i class="fa-solid fa-shield-heart"></i>
+              <span>Respuesta dentro del día • Consulta inicial orientativa</span>
+            </div>
+          </div>
+          <a href="#servicios" class="btn-ghost align-start margin-top-sm" id="hero-cta-sec">
+            <i aria-hidden="true" class="fa-solid fa-arrow-down"></i> Ver servicios
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">Niños</span>
+            <span class="stat-label">y Adolescentes</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Personalizado</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-card">
+          <div class="hero-photo-bg"></div>
+          <img src="camila-cabana.webp" alt="Camila Cabaña, licenciada en psicología infantil" loading="eager"
+            fetchpriority="high" decoding="async" class="hero-photo-img">
+          <div class="hero-photo-pill pill-1">
+            <i aria-hidden="true" class="fa-solid fa-brain"></i> Evaluaciones neurocognitivas
+          </div>
+          <div class="hero-photo-pill pill-2">
+            <i aria-hidden="true" class="fa-solid fa-envelope"></i> Email de contacto
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ── TRUST BLOCK (CONFIANZA) ────────────────────── -->
+    <section class="trust reveal"
+      style="background: var(--white); padding: 60px 2rem; border-bottom: 1px solid rgba(155, 114, 170, 0.1);">
+      <div style="max-width: 1100px; margin: 0 auto; text-align: center;">
+        <h3
+          style="font-family: 'DM Serif Display', serif; font-size: 1.8rem; color: var(--mauve-dark); margin-bottom: 2rem;">
+          Profesional especializada</h3>
+        <ul
+          style="list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; color: var(--text-soft); font-weight: 500;">
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><i aria-hidden="true"
+              class="fa-solid fa-circle-check" style="color: var(--sage); font-size: 1.2rem;"></i> Atención
+            personalizada</li>
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><i aria-hidden="true"
+              class="fa-solid fa-circle-check" style="color: var(--sage); font-size: 1.2rem;"></i> Evaluaciones
+            profesionales</li>
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><i aria-hidden="true"
+              class="fa-solid fa-circle-check" style="color: var(--sage); font-size: 1.2rem;"></i> Trabajo
+            interdisciplinario con escuelas
+          </li>
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><i aria-hidden="true"
+              class="fa-solid fa-circle-check" style="color: var(--sage); font-size: 1.2rem;"></i> Informes clínicos
+            detallados</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── SOBRE MÍ ──────────────────────────────────── -->
+    <section class="about" id="sobre-mi">
+      <div class="about-inner">
+        <div class="about-img-wrap reveal">
+          <div class="about-img-frame">
+            <img src="cami-cabana.jpeg" alt="Camila Cabaña, foto profesional en consultorio" loading="lazy"
+              decoding="async">
+          </div>
+          <div class="about-accent"></div>
+          <div class="about-card-float about-card-float-pos">
+            <div class="icon-wrap"><i aria-hidden="true" class="fa-solid fa-graduation-cap"></i></div>
+            <p>Lic. en Psicología</p>
+            <span>Universidad Católica de Córdoba</span>
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <div class="section-tag">El Enfoque</div>
+          <h2 class="section-title">Enfoque integrador y trabajo <em>interdisciplinario</em></h2>
+          <p>
+            Mi enfoque es integrador, combinando perspectivas cognitivas, socioculturales y neuropsicológicas.
+          </p>
+          <p>
+            Considero fundamental tanto los procesos internos del aprendizaje como el contexto familiar y escolar,
+            priorizando el trabajo interdisciplinario con otros profesionales.
+          </p>
+          <div class="about-perks">
+            <div class="perk">
+              <div class="perk-icon"><i aria-hidden="true" class="fa-solid fa-shield-cat"></i></div>
+              <div class="perk-text">
+                <strong>Diplomada en Psicopedagogía Forense</strong>
+                <span>Formación adicional especializada (Egreso 2023).</span>
+              </div>
+            </div>
+            <div class="perk">
+              <div class="perk-icon"><i aria-hidden="true" class="fa-solid fa-users-viewfinder"></i></div>
+              <div class="perk-text">
+                <strong>Evaluaciones Neurocognitivas</strong>
+                <span>Manejo de instrumentos estandarizados, incluyendo WAIS IV y WISC V.</span>
+              </div>
+            </div>
+            <div class="perk">
+              <div class="perk-icon"><i aria-hidden="true" class="fa-solid fa-seedling"></i></div>
+              <div class="perk-text">
+                <strong>Perfil de Pacientes</strong>
+                <span>Atención a niños, adolescentes y adultos. Abordaje de TDAH, Dislexia y Retraso mental leve.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICIOS ─────────────────────────────────── -->
+    <section class="services" id="servicios">
+      <div class="services-inner">
+        <div class="services-head reveal">
+          <div class="section-tag">Servicios</div>
+          <h2 class="section-title">¿En qué te puedo <em>ayudar</em>?</h2>
+          <p class="section-subtitle mx-auto">
+            Cada proceso es único. Trabajo con una metodología personalizada, adaptada al ritmo y necesidades de cada
+            persona.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-brain"></i></div>
+            <h4>Evaluación Neurocognitiva</h4>
+            <img src="evaluacion-neurocognitiva.jpeg"
+              alt="Sesión psicopedagógica con niño utilizando actividades cognitivas" loading="lazy" decoding="async"
+              style="width: 100%; height: 240px; object-fit: cover; object-position: top; border-radius: 12px; margin-bottom: 1.4rem; margin-top: 1rem; display: block;">
+            <p><strong>El servicio:</strong> Evaluación integral para niños, adolescentes y adultos utilizando
+              instrumentos estandarizados (WAIS IV, WISC V).<br><br><strong>El resultado:</strong> Informes
+              profesionales detallados sobre el perfil de la persona.</p>
+            <span class="service-tag">Evaluación Estructurada</span>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-book-open-reader"></i></div>
+            <h4>Proceso de Evaluación</h4>
+            <img src="sesion-clinica.jpeg" alt="Consulta psicológica profesional" loading="lazy" decoding="async"
+              style="width: 100%; height: 240px; object-fit: cover; object-position: top; border-radius: 12px; margin-bottom: 1.4rem; margin-top: 1rem; display: block;">
+            <p><strong>Proceso:</strong> El proceso es estructurado y totalmente adaptado a las necesidades puntuales de
+              cada paciente.<br><br><strong>Duración:</strong> Se lleva a cabo en un formato de 3 a 6 sesiones, según la
+              complejidad.</p>
+            <span class="service-tag">Sesiones Clínicas</span>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-handshake-angle"></i></div>
+            <h4>Trabajo Interdisciplinario</h4>
+            <img src="trabajo-interdisciplinario.jpeg"
+              alt="Sesión de trabajo interdisciplinario y orientación con familia" loading="lazy" decoding="async"
+              style="width: 100%; height: 240px; object-fit: cover; object-position: top; border-radius: 12px; margin-bottom: 1.4rem; margin-top: 1rem; display: block;">
+            <p><strong>El servicio:</strong> Articulación y comunicación constante con escuelas y otros profesionales de
+              la salud del paciente.<br><br><strong>El objetivo:</strong> Considerar el contexto real para mejorar de
+              forma integral el bienestar general.</p>
+            <span class="service-tag">Red de Apoyo</span>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-puzzle-piece"></i></div>
+            <h4>Atención de TDAH</h4>
+            <img src="tdah-intervencion.jpeg" alt="Interacción de trabajo terapéutico infantil en atención clínica"
+              loading="lazy" decoding="async"
+              style="width: 100%; height: 240px; object-fit: cover; object-position: top; border-radius: 12px; margin-bottom: 1.4rem; margin-top: 1rem; display: block;">
+            <p><strong>El servicio:</strong> Intervención clínica orientada a pacientes con Trastorno por Déficit de
+              Atención e Hiperactividad.<br><br><strong>El objetivo:</strong> Brindar las herramientas cognitivas y
+              conductuales más efectivas para el paciente.</p>
+            <span class="service-tag">Abordaje Específico</span>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-school-flag"></i></div>
+            <h4>Abordaje de la Dislexia</h4>
+            <img src="dislexia-trabajo.jpeg" alt="Actividad física con niño durante abordaje terapéutico" loading="lazy"
+              decoding="async"
+              style="width: 100%; height: 240px; object-fit: cover; object-position: top; border-radius: 12px; margin-bottom: 1.4rem; margin-top: 1rem; display: block;">
+            <p><strong>El servicio:</strong> Acompañamiento clínico para abordar las dificultades frecuentes asociadas a
+              la Dislexia.<br><br><strong>El objetivo:</strong> Desarrollar la autonomía y compensar adecuadamente las
+              dificultades con estrategias.</p>
+            <span class="service-tag">Estrategias Clínicas</span>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-video"></i></div>
+            <h4>Diferentes Modalidades</h4>
+            <img src="diferentes-modalidades.jpeg" alt="Actividad cognitiva lúdica en diferentes modalidades"
+              loading="lazy" decoding="async"
+              style="width: 100%; height: 240px; object-fit: cover; object-position: top; border-radius: 12px; margin-bottom: 1.4rem; margin-top: 1rem; display: block;">
+            <p><strong>El servicio:</strong> Flexibilidad total, ofreciendo atención en formato Presencial u Online a
+              todos los pacientes.<br><br><strong>Ubicación:</strong> La atención presencial se encuentra en Río Grande,
+              Tierra del Fuego, Argentina.</p>
+            <span class="service-tag">Modalidad de Atención</span>
+          </div>
+        </div>
+
+        <!-- CTA Repetido -->
+        <div class="reveal" style="text-align: center; margin-top: 4rem;">
+          <a href="https://wa.me/5492964630915?text=Hola%20Camila,%20quisiera%20consultar%20por%20sus%20servicios."
+            target="_blank" rel="noopener noreferrer" class="btn-primary" style="display: inline-flex;"><i
+              aria-hidden="true" class="fa-brands fa-whatsapp"></i> Solicitar consulta</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROCESO ───────────────────────────────────── -->
+    <section class="process" id="proceso">
+      <div class="process-inner">
+        <div class="process-head reveal">
+          <div class="section-tag">¿Cómo funciona?</div>
+          <h2 class="section-title">El camino hacia el <em>cambio</em></h2>
+          <p class="section-subtitle mx-auto">
+            Un proceso claro y acompañado desde el primer contacto hasta el resultado.
+          </p>
+        </div>
+        <div class="process-steps">
+          <div class="process-step reveal">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Primera consulta gratuita</h4>
+              <p>Nos conectamos para escuchar tu situación, responder tus preguntas y evaluar si somos un buen match.
+                Sin
+                compromiso.</p>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Evaluación neurocognitiva</h4>
+              <p>Realizamos un proceso de evaluación neurocognitiva estructurado en 3 a 6 sesiones mediante instrumentos
+                estandarizados.</p>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>Informes profesionales</h4>
+              <p>Te explico los resultados de forma clara a través de una devolución y te entrego tu informe profesional
+                detallado.</p>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4>Trabajo interdisciplinario</h4>
+              <p>Seguimiento continuo y foco en el trabajo interdisciplinario con escuelas y familias para asegurar el
+                bienestar del paciente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TESTIMONIOS ───────────────────────────────── -->
+    <section class="testimonials" id="testimonios">
+      <div class="testimonials-inner">
+        <div class="testimonials-head reveal">
+          <div class="section-tag">Testimonios</div>
+          <h2 class="section-title white">Lo que dicen las familias</h2>
+        </div>
+        <div class="testi-grid">
+          <div class="testi-card reveal">
+            <div class="testi-stars">
+              <i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i
+                aria-hidden="true" class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i aria-hidden="true"
+                class="fa-solid fa-star"></i>
+            </div>
+            <blockquote>"A. lloraba cada vez que había que sentarse con lengua o matemática. Estaba bloqueado. Desde que
+              empezamos a evaluar el perfil con Cami, entendimos cómo entraba la información a su cerebro. Ahora va
+              seguro, relajado y ya no hay crisis pre-tarea."</blockquote>
+            <div class="testi-author">
+              <div class="testi-avatar av1"><i aria-hidden="true" class="fa-solid fa-check"></i></div>
+              <div>
+                <span class="testi-name">Marcela C.</span>
+                <span class="testi-role">Mamá de un niño con dislexia</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card reveal">
+            <div class="testi-stars">
+              <i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i
+                aria-hidden="true" class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i aria-hidden="true"
+                class="fa-solid fa-star"></i>
+            </div>
+            <blockquote>"Estábamos agotados buscando respuestas para el perfil sensorial y atencional de V. Cami no solo
+              armó una evaluación sumamente técnica y brillante; nos dio a los padres un PDF de pautas diarias que nos
+              devolvió la paz mental en casa."</blockquote>
+            <div class="testi-author">
+              <div class="testi-avatar av2"><i aria-hidden="true" class="fa-solid fa-check"></i></div>
+              <div>
+                <span class="testi-name">Leonardo G.</span>
+                <span class="testi-role">Orientación y Perfil Neurocognitivo</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card reveal">
+            <div class="testi-stars">
+              <i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i
+                aria-hidden="true" class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i aria-hidden="true"
+                class="fa-solid fa-star"></i>
+            </div>
+            <blockquote>"La calidez de su consultorio y el respeto que maneja por los tiempos del paciente es único. Mi
+              hijo está dentro del espectro autista y Cami siempre logra llegar a él mediante sus intereses sin forzar
+              nada. Avanzó muchísimo."</blockquote>
+            <div class="testi-author">
+              <div class="testi-avatar av3"><i aria-hidden="true" class="fa-solid fa-check"></i></div>
+              <div>
+                <span class="testi-name">Lucía S.</span>
+                <span class="testi-role">Sesiones semanales / TEA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ───────────────────────────────────────── -->
+    <section class="faq" id="faq">
+      <div class="faq-inner">
+        <div class="faq-head reveal">
+          <div class="section-tag">FAQ</div>
+          <h2 class="section-title">Preguntas <em>frecuentes</em></h2>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false" id="faq-q0">
+            <span>¿Cómo es la primera consulta?</span>
+            <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
+          </button>
+          <div class="faq-answer">
+            <p>Se realiza una entrevista inicial para conocer la situación, establecer objetivos y definir el proceso de
+              evaluación o acompañamiento.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false" id="faq-q1">
+            <span>¿A partir de qué edad se puede consultar?</span>
+            <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
+          </button>
+          <div class="faq-answer">
+            <p>Atiendo a niños, adolescentes y adultos, adaptando los instrumentos estandarizados (como WAIS IV y WISC
+              V) a las necesidades de cada etapa.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false" id="faq-q2">
+            <span>¿Las sesiones son presenciales u online?</span>
+            <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
+          </button>
+          <div class="faq-answer">
+            <p>Ofrezco ambas modalidades de atención. Podés optar por encuentros presenciales en Río Grande, Tierra del
+              Fuego, o bajo la modalidad Online según te resulte más cómodo.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false" id="faq-q3">
+            <span>¿Cuánto dura el proceso de evaluación?</span>
+            <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
+          </button>
+          <div class="faq-answer">
+            <p>Las evaluaciones neurocognitivas se realizan a través de 3 a 6 sesiones, dependiendo de la complejidad
+              del caso. Al finalizar se entrega su respectivo informe profesional.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false" id="faq-q4">
+            <span>¿Trabajan con escuelas o maestros de apoyo?</span>
+            <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
+          </button>
+          <div class="faq-answer">
+            <p>Sí, considero fundamental tanto los procesos internos como el contexto familiar y escolar, priorizando el
+              trabajo interdisciplinario con otros profesionales y escuelas.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false" id="faq-q5">
+            <span>¿Cuáles son los horarios de atención y cómo agendo?</span>
+            <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
+          </button>
+          <div class="faq-answer">
+            <p>Mi horario de atención es de 08:00 a 20:00 hs. Podés agendar escribiéndome de forma directa a través de
+              WhatsApp o por correo electrónico.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA FINAL ─────────────────────────────────── -->
+    <section class="cta-band" id="contacto">
+      <div class="cta-band-inner reveal">
+        <div class="section-tag justify-center">Contacto</div>
+        <h2>¿Necesitás una <em>evaluación profesional?</em></h2>
+        <p>
+          Podés comunicarte para recibir información sobre evaluaciones y acompañamiento psicopedagógico.
+        </p>
+        <div class="cta-band-actions mb-2rem">
+          <div class="hero-actions-col">
+            <a href="https://wa.me/5492964630915?text=Hola%20Camila,%20deseo%20pautar%20una%20primera%20consulta."
+              target="_blank" rel="noopener noreferrer" class="btn-wa" id="cta-whatsapp">
+              <i aria-hidden="true" class="fa-brands fa-whatsapp"></i> Contactar por WhatsApp
+            </a>
+            <span class="microcopy margin-top-sm"><i aria-hidden="true" class="fa-solid fa-lock color-wa-green"></i>
+              Contacto 100% privado y confidencial.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ────────────────────────────────────── -->
+  <footer>
+    © 2026 <strong class="color-white-75">Camila Cabaña</strong> · Lic. en Psicología ·
+    <a href="mailto:camilacabana05@gmail.com" target="_blank" rel="noopener noreferrer">camilacabana05@gmail.com</a>
+  </footer>
+
+  <!-- ── WA FLOAT ──────────────────────────────────── -->
+  <a href="https://wa.me/5492964630915" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="WhatsApp"
+    id="wa-float-btn">
+    <i aria-hidden="true" class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Nav scroll effect
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 40);
+      });
+
+      // Reveal on scroll
+      const reveals = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => entry.target.classList.add('visible'), i * 80);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      reveals.forEach(el => observer.observe(el));
+
+      // FAQ accordion
+      document.querySelectorAll('.faq-question').forEach(q => {
+        q.addEventListener('click', () => {
+          const item = q.parentElement;
+          const isOpen = item.classList.contains('open');
+          document.querySelectorAll('.faq-item').forEach(i => {
+            i.classList.remove('open');
+            i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          });
+          if (!isOpen) {
+            item.classList.add('open');
+            q.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      // Smooth nav links (mobile fallback)
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+          const target = document.querySelector(a.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      // Mobile nav toggle
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+      // Cerrar al hacer click en un link
+      navLinks.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => navLinks.classList.remove('show'));
+      });
+    });
+  </script>
+</body>
+
+</html>
