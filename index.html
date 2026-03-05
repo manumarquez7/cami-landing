@@ -4,29 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Camila Cabaña | Lic. en Psicología</title>
+
+  <!-- Google Analytics 4 (reemplazar G-XXXXXXXXXX por el ID real cuando el cliente lo provea) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <title>Camila Cabaña | Psicopedagoga</title>
   <meta name="description"
     content="Evaluaciones neurocognitivas y acompañamiento psicopedagógico para niños y adolescentes. Atención profesional en Río Grande, Tierra del Fuego.">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta property="og:title" content="Camila Cabaña | Lic. en Psicología">
+  <meta property="og:title" content="Camila Cabaña | Psicopedagoga">
   <meta property="og:description"
-    content="Lic. en Psicología. Evaluación neurocognitiva infantil y adolescente. Enfoque integrador y trabajo interdisciplinario.">
+    content="Licenciada en Psicopedagogía. Evaluación neurocognitiva infantil y adolescente. Enfoque integrador y trabajo interdisciplinario.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://example.com/camila-cabana.webp">
-  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="camila-cabana.webp">
+  <meta property="og:image:alt" content="Camila Cabaña psicopedagoga">
+  <meta property="og:url" content="">
   <meta name="robots" content="index, follow">
-  <meta name="author" content="Camila Cabaña licenciada en psicología">
-  <link rel="canonical" href="https://example.com/">
-  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="author" content="Camila Cabaña, Licenciada en Psicopedagogía">
+  <link rel="canonical" href="">
   <script type="application/ld+json">
   {
    "@context": "https://schema.org",
-   "@type": "Psychologist",
+   "@type": "HealthAndBeautyBusiness",
    "name": "Camila Cabaña",
-   "jobTitle": "Licenciada en Psicología",
+   "jobTitle": "Psicopedagoga",
    "areaServed": "Río Grande, Tierra del Fuego, Argentina",
-   "telephone": "+54 9 2964 630915",
+   "telephone": "+54 9 3517 177784",
    "email": "camilacabana05@gmail.com",
+   "address": {
+     "@type": "PostalAddress",
+     "addressLocality": "Río Grande",
+     "addressRegion": "Tierra del Fuego",
+     "addressCountry": "AR"
+   },
    "availableService": [
      "Evaluación Neurocognitiva",
      "Evaluación Psicopedagógica",
@@ -221,6 +237,9 @@
       display: flex;
       align-items: center;
       padding: 100px 2rem 60px;
+      background: linear-gradient(180deg,
+          rgba(155, 114, 170, 0.05) 0%,
+          rgba(210, 232, 207, 0.08) 100%);
       position: relative;
       overflow: hidden;
     }
@@ -690,7 +709,8 @@
     }
 
     .service-card {
-      background: var(--white);
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
       border-radius: var(--radius);
       padding: 2.2rem;
       box-shadow: var(--shadow-sm);
@@ -717,6 +737,7 @@
     .service-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 25px 60px rgba(0, 0, 0, .12);
+      border-color: rgba(155, 114, 170, .3);
     }
 
     .service-card:hover::before {
@@ -1338,6 +1359,61 @@
         transform: translateY(0);
       }
     }
+
+    /* ── SITUACIONES COMUNES ─────────────────── */
+    .situaciones {
+      padding: 80px 2rem;
+      background: var(--cream);
+    }
+
+    .situaciones-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .situaciones-inner .section-tag {
+      margin-bottom: 1rem;
+    }
+
+    .situaciones-inner .section-title {
+      margin-bottom: 2.8rem;
+    }
+
+    .situaciones-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .situacion-chip {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(155, 114, 170, .15);
+      border-radius: 14px;
+      padding: 1.4rem 1.6rem;
+      font-size: .95rem;
+      font-weight: 600;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      text-align: left;
+      transition: all .3s ease;
+      cursor: default;
+    }
+
+    .situacion-chip:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(155, 114, 170, .12);
+      border-color: rgba(155, 114, 170, .35);
+    }
+
+    .situacion-chip i {
+      color: var(--mauve);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
   </style>
 </head>
 
@@ -1347,7 +1423,7 @@
   <nav id="navbar">
     <a class="nav-brand" href="#">
       <span class="nav-brand-dot"></span>
-      <span>Cami Cabaña</span>
+      <span>Camila Cabaña</span>
     </a>
     <ul class="nav-links">
       <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -1370,20 +1446,21 @@
       <div class="hero-text">
         <div class="hero-badge">
           <i aria-hidden="true" class="fa-solid fa-graduation-cap"></i>
-          Lic. en Psicología — Río Grande, TDF
+          Psicopedagoga — Río Grande, Tierra del Fuego
         </div>
         <h1 class="hero-title">
           Evaluación y acompañamiento psicopedagógico para <em>niños y adolescentes</em>
         </h1>
         <p class="hero-desc">
-          Ayudo a comprender y abordar dificultades de aprendizaje, atención y desarrollo mediante evaluaciones
-          profesionales y estrategias personalizadas.
+          Acompaño procesos vinculados a dificultades de aprendizaje, desarrollo cognitivo, orientación vocacional y
+          evaluación psicopedagógica.
         </p>
         <div class="hero-actions hero-actions-container">
           <div class="hero-actions-col">
-            <a href="https://wa.me/5492964630915?text=Hola%20Camila,%20vi%20tu%20p%C3%A1gina%20y%20quisiera%20consultar%20por%20una%20evaluaci%C3%B3n%20para%20mi%20hijo."
-              target="_blank" rel="noopener noreferrer" class="btn-primary" id="hero-cta-main">
-              <i aria-hidden="true" class="fa-brands fa-whatsapp"></i> Consultar por evaluación
+            <a href="https://wa.me/5493517177784?text=Hola%20Camila,%20vi%20tu%20p%C3%A1gina%20y%20quisiera%20consultar%20por%20una%20evaluaci%C3%B3n%20para%20mi%20hijo."
+              target="_blank" rel="noopener noreferrer" class="btn-primary" id="hero-cta-main"
+              onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'hero'});">
+              <i aria-hidden="true" class="fa-brands fa-whatsapp"></i> Consultar evaluación para mi hijo
             </a>
             <div class="cta-trust">
               <i class="fa-solid fa-shield-heart"></i>
@@ -1396,30 +1473,29 @@
         </div>
         <div class="hero-stats">
           <div class="stat">
-            <span class="stat-num">2</span>
-            <span class="stat-label">Años de experiencia</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num">Niños</span>
-            <span class="stat-label">y Adolescentes</span>
+            <span class="stat-num">Niños, adolescentes</span>
+            <span class="stat-label">y adultos</span>
           </div>
           <div class="stat">
             <span class="stat-num">100%</span>
             <span class="stat-label">Personalizado</span>
           </div>
         </div>
+        <div style="margin-top:1.5rem;font-size:14px;color:#6b7280;">
+          Acompañando a familias en procesos de evaluación y aprendizaje.
+        </div>
       </div>
 
       <div class="hero-photo-wrap">
         <div class="hero-photo-card">
           <div class="hero-photo-bg"></div>
-          <img src="camila-cabana.webp" alt="Camila Cabaña, licenciada en psicología infantil" loading="eager"
-            fetchpriority="high" decoding="async" class="hero-photo-img">
+          <img src="camila-cabana.webp" alt="Camila Cabaña, psicopedagoga" loading="eager" fetchpriority="high"
+            decoding="async" class="hero-photo-img">
           <div class="hero-photo-pill pill-1">
             <i aria-hidden="true" class="fa-solid fa-brain"></i> Evaluaciones neurocognitivas
           </div>
           <div class="hero-photo-pill pill-2">
-            <i aria-hidden="true" class="fa-solid fa-envelope"></i> Email de contacto
+            <i aria-hidden="true" class="fa-solid fa-user-check"></i> Atención personalizada
           </div>
         </div>
       </div>
@@ -1453,6 +1529,42 @@
       </div>
     </section>
 
+    <!-- ── SITUACIONES COMUNES ─────────────────────────── -->
+    <section class="situaciones" id="situaciones">
+      <div class="situaciones-inner">
+        <div class="section-tag reveal" style="display:inline-block;">Psicopedagogía</div>
+        <h2 class="section-title reveal">¿En qué situaciones puede
+          <em>ayudar?</em>
+        </h2>
+        <div class="situaciones-grid">
+          <div class="situacion-chip reveal">
+            <i aria-hidden="true" class="fa-solid fa-book-open"></i>
+            Dificultades en la lectura o escritura
+          </div>
+          <div class="situacion-chip reveal">
+            <i aria-hidden="true" class="fa-solid fa-brain"></i>
+            Problemas de atención o concentración
+          </div>
+          <div class="situacion-chip reveal">
+            <i aria-hidden="true" class="fa-solid fa-chart-line"></i>
+            Bajo rendimiento escolar
+          </div>
+          <div class="situacion-chip reveal">
+            <i aria-hidden="true" class="fa-solid fa-microscope"></i>
+            Evaluaciones neurocognitivas
+          </div>
+          <div class="situacion-chip reveal">
+            <i aria-hidden="true" class="fa-solid fa-compass"></i>
+            Orientación vocacional
+          </div>
+          <div class="situacion-chip reveal">
+            <i aria-hidden="true" class="fa-solid fa-hands-holding-child"></i>
+            Acompañamiento en procesos de aprendizaje
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ── SOBRE MÍ ──────────────────────────────────── -->
     <section class="about" id="sobre-mi">
       <div class="about-inner">
@@ -1464,14 +1576,14 @@
           <div class="about-accent"></div>
           <div class="about-card-float about-card-float-pos">
             <div class="icon-wrap"><i aria-hidden="true" class="fa-solid fa-graduation-cap"></i></div>
-            <p>Lic. en Psicología</p>
+            <p>Licenciada en Psicopedagogía</p>
             <span>Universidad Católica de Córdoba</span>
           </div>
         </div>
 
         <div class="about-text reveal">
           <div class="section-tag">El Enfoque</div>
-          <h2 class="section-title">Enfoque integrador y trabajo <em>interdisciplinario</em></h2>
+          <h2 class="section-title">Detrás de cada consulta hay una historia que <em>merece ser escuchada</em></h2>
           <p>
             Mi enfoque es integrador, combinando perspectivas cognitivas, socioculturales y neuropsicológicas.
           </p>
@@ -1484,7 +1596,7 @@
               <div class="perk-icon"><i aria-hidden="true" class="fa-solid fa-shield-cat"></i></div>
               <div class="perk-text">
                 <strong>Diplomada en Psicopedagogía Forense</strong>
-                <span>Formación adicional especializada (Egreso 2023).</span>
+                <span>Universidad Abierta Interamericana — 2024</span>
               </div>
             </div>
             <div class="perk">
@@ -1498,7 +1610,15 @@
               <div class="perk-icon"><i aria-hidden="true" class="fa-solid fa-seedling"></i></div>
               <div class="perk-text">
                 <strong>Perfil de Pacientes</strong>
-                <span>Atención a niños, adolescentes y adultos. Abordaje de TDAH, Dislexia y Retraso mental leve.</span>
+                <span>Atención a niños, adolescentes y adultos. Abordaje de TDAH, Dislexia y Discapacidad intelectual
+                  leve.</span>
+              </div>
+            </div>
+            <div class="perk">
+              <div class="perk-icon"><i aria-hidden="true" class="fa-solid fa-calendar-check"></i></div>
+              <div class="perk-text">
+                <strong>2 Años de Experiencia Clínica</strong>
+                <span>Acompañando procesos de evaluación y seguimiento psicopedagógico desde 2024.</span>
               </div>
             </div>
           </div>
@@ -1522,8 +1642,7 @@
           <div class="service-card reveal">
             <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-brain"></i></div>
             <h4>Evaluación Neurocognitiva</h4>
-            <img src="evaluacion-neurocognitiva.jpeg"
-              alt="Sesión psicopedagógica con niño utilizando actividades cognitivas" loading="lazy" decoding="async"
+            <img src="WAIS.jpg" alt="Materiales de evaluación neurocognitiva WAIS" loading="lazy" decoding="async"
               style="width: 100%; height: 240px; object-fit: cover; object-position: top; border-radius: 12px; margin-bottom: 1.4rem; margin-top: 1rem; display: block;">
             <p><strong>El servicio:</strong> Evaluación integral para niños, adolescentes y adultos utilizando
               instrumentos estandarizados (WAIS IV, WISC V).<br><br><strong>El resultado:</strong> Informes
@@ -1564,13 +1683,13 @@
           </div>
           <div class="service-card reveal">
             <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-school-flag"></i></div>
-            <h4>Abordaje de la Dislexia</h4>
-            <img src="dislexia-trabajo.jpeg" alt="Actividad física con niño durante abordaje terapéutico" loading="lazy"
-              decoding="async"
+            <h4>Orientación Vocacional</h4>
+            <img src="orientacion-vocacional.jpeg" alt="Actividad física con niño durante abordaje terapéutico"
+              loading="lazy" decoding="async"
               style="width: 100%; height: 240px; object-fit: cover; object-position: top; border-radius: 12px; margin-bottom: 1.4rem; margin-top: 1rem; display: block;">
-            <p><strong>El servicio:</strong> Acompañamiento clínico para abordar las dificultades frecuentes asociadas a
-              la Dislexia.<br><br><strong>El objetivo:</strong> Desarrollar la autonomía y compensar adecuadamente las
-              dificultades con estrategias.</p>
+            <p><strong>El servicio:</strong> Acompañamiento en procesos de orientación vocacional para adolescentes y
+              jóvenes.<br><br><strong>El objetivo:</strong> Ayudar a identificar intereses, habilidades y posibles
+              caminos académicos o profesionales.</p>
             <span class="service-tag">Estrategias Clínicas</span>
           </div>
           <div class="service-card reveal">
@@ -1588,8 +1707,9 @@
 
         <!-- CTA Repetido -->
         <div class="reveal" style="text-align: center; margin-top: 4rem;">
-          <a href="https://wa.me/5492964630915?text=Hola%20Camila,%20quisiera%20consultar%20por%20sus%20servicios."
-            target="_blank" rel="noopener noreferrer" class="btn-primary" style="display: inline-flex;"><i
+          <a href="https://wa.me/5493517177784?text=Hola%20Camila,%20quisiera%20consultar%20por%20sus%20servicios."
+            target="_blank" rel="noopener noreferrer" class="btn-primary" style="display: inline-flex;"
+            onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'servicios'});"><i
               aria-hidden="true" class="fa-brands fa-whatsapp"></i> Solicitar consulta</a>
         </div>
       </div>
@@ -1609,10 +1729,9 @@
           <div class="process-step reveal">
             <div class="step-number">1</div>
             <div class="step-content">
-              <h4>Primera consulta gratuita</h4>
-              <p>Nos conectamos para escuchar tu situación, responder tus preguntas y evaluar si somos un buen match.
-                Sin
-                compromiso.</p>
+              <h4>Primera consulta</h4>
+              <p>Nos reunimos para comprender tu situación, responder tus dudas y evaluar juntos el mejor camino a
+                seguir. Sin compromiso.</p>
             </div>
           </div>
           <div class="process-step reveal">
@@ -1648,7 +1767,7 @@
       <div class="testimonials-inner">
         <div class="testimonials-head reveal">
           <div class="section-tag">Testimonios</div>
-          <h2 class="section-title white">Lo que dicen las familias</h2>
+          <h2 class="section-title white">Experiencias de familias que acompañé</h2>
         </div>
         <div class="testi-grid">
           <div class="testi-card reveal">
@@ -1657,14 +1776,18 @@
                 aria-hidden="true" class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i aria-hidden="true"
                 class="fa-solid fa-star"></i>
             </div>
-            <blockquote>"A. lloraba cada vez que había que sentarse con lengua o matemática. Estaba bloqueado. Desde que
-              empezamos a evaluar el perfil con Cami, entendimos cómo entraba la información a su cerebro. Ahora va
-              seguro, relajado y ya no hay crisis pre-tarea."</blockquote>
+            <blockquote>
+              "En el año que Theo asistió conocí a una profesional súper amorosa, atenta y predispuesta con los niños.
+              Siempre brindó la mejor atención, comprendiendo cada situación y acompañándonos con mucha paciencia y
+              dedicación.
+              Durante la evaluación neurocognitiva nos explicó cada paso con claridad y nos dio mucha tranquilidad.
+              Una profesional increíble."
+            </blockquote>
             <div class="testi-author">
               <div class="testi-avatar av1"><i aria-hidden="true" class="fa-solid fa-check"></i></div>
               <div>
-                <span class="testi-name">Marcela C.</span>
-                <span class="testi-role">Mamá de un niño con dislexia</span>
+                <span class="testi-name">Melanie Echeverría</span>
+                <span class="testi-role">Mamá de Theo</span>
               </div>
             </div>
           </div>
@@ -1674,14 +1797,18 @@
                 aria-hidden="true" class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i aria-hidden="true"
                 class="fa-solid fa-star"></i>
             </div>
-            <blockquote>"Estábamos agotados buscando respuestas para el perfil sensorial y atencional de V. Cami no solo
-              armó una evaluación sumamente técnica y brillante; nos dio a los padres un PDF de pautas diarias que nos
-              devolvió la paz mental en casa."</blockquote>
+            <blockquote>
+              "Quiero compartir nuestra experiencia con Camila. Desde el primer momento nos recibió con mucho cariño y
+              dedicación.
+              Mi hijo siempre esperaba con entusiasmo sus sesiones, donde también había momentos de juego que le
+              encantaban.
+              Es una profesional muy cálida y estamos muy agradecidos por todo el acompañamiento."
+            </blockquote>
             <div class="testi-author">
               <div class="testi-avatar av2"><i aria-hidden="true" class="fa-solid fa-check"></i></div>
               <div>
-                <span class="testi-name">Leonardo G.</span>
-                <span class="testi-role">Orientación y Perfil Neurocognitivo</span>
+                <span class="testi-name">Laura López</span>
+                <span class="testi-role">Mamá de Thomas</span>
               </div>
             </div>
           </div>
@@ -1691,14 +1818,15 @@
                 aria-hidden="true" class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i aria-hidden="true"
                 class="fa-solid fa-star"></i>
             </div>
-            <blockquote>"La calidez de su consultorio y el respeto que maneja por los tiempos del paciente es único. Mi
-              hijo está dentro del espectro autista y Cami siempre logra llegar a él mediante sus intereses sin forzar
-              nada. Avanzó muchísimo."</blockquote>
+            <blockquote>
+              "El proceso con la psicopedagoga fue muy positivo durante todo el tiempo que trabajamos juntos.
+              Es una excelente profesional y el acompañamiento fue de gran ayuda."
+            </blockquote>
             <div class="testi-author">
               <div class="testi-avatar av3"><i aria-hidden="true" class="fa-solid fa-check"></i></div>
               <div>
-                <span class="testi-name">Lucía S.</span>
-                <span class="testi-role">Sesiones semanales / TEA</span>
+                <span class="testi-name">Diego García</span>
+                <span class="testi-role">Papá de Max</span>
               </div>
             </div>
           </div>
@@ -1775,8 +1903,31 @@
             <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
           </button>
           <div class="faq-answer">
-            <p>Mi horario de atención es de 08:00 a 20:00 hs. Podés agendar escribiéndome de forma directa a través de
+            <p>Los turnos se coordinan en horarios de mañana y tarde según disponibilidad. Podés agendar escribiéndome
+              de forma directa a través de
               WhatsApp o por correo electrónico.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false" id="faq-q6">
+            <span>¿Cuánto dura cada sesión?</span>
+            <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
+          </button>
+          <div class="faq-answer">
+            <p>Las sesiones tienen una duración aproximada de 40 minutos.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false" id="faq-q7">
+            <span>¿Hace falta un diagnóstico previo para consultar?</span>
+            <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
+          </button>
+          <div class="faq-answer">
+            <p>No es necesario. Muchas familias llegan sin un diagnóstico formal y precisamente a eso las ayudamos: a
+              entender la situación, evaluar y trazar un camino. Podés consultar ante cualquier duda sobre aprendizaje,
+              atención o desarrollo.</p>
           </div>
         </div>
       </div>
@@ -1792,9 +1943,14 @@
         </p>
         <div class="cta-band-actions mb-2rem">
           <div class="hero-actions-col">
-            <a href="https://wa.me/5492964630915?text=Hola%20Camila,%20deseo%20pautar%20una%20primera%20consulta."
-              target="_blank" rel="noopener noreferrer" class="btn-wa" id="cta-whatsapp">
+            <a href="https://wa.me/5493517177784?text=Hola%20Camila,%20deseo%20pautar%20una%20primera%20consulta."
+              target="_blank" rel="noopener noreferrer" class="btn-wa" id="cta-whatsapp"
+              onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'cta_final'});">
               <i aria-hidden="true" class="fa-brands fa-whatsapp"></i> Contactar por WhatsApp
+            </a>
+            <a href="mailto:camilacabana05@gmail.com"
+              style="display:inline-flex;align-items:center;gap:.5rem;margin-top:.8rem;font-size:.88rem;color:var(--mauve);text-decoration:none;font-weight:500;">
+              <i aria-hidden="true" class="fa-solid fa-envelope"></i> camilacabana05@gmail.com
             </a>
             <span class="microcopy margin-top-sm"><i aria-hidden="true" class="fa-solid fa-lock color-wa-green"></i>
               Contacto 100% privado y confidencial.</span>
@@ -1806,13 +1962,16 @@
 
   <!-- ── FOOTER ────────────────────────────────────── -->
   <footer>
-    © 2026 <strong class="color-white-75">Camila Cabaña</strong> · Lic. en Psicología ·
+    © 2026 <strong class="color-white-75">Camila Cabaña</strong> · Psicopedagoga ·
     <a href="mailto:camilacabana05@gmail.com" target="_blank" rel="noopener noreferrer">camilacabana05@gmail.com</a>
+    <div style="margin-top: 1rem; font-size: 0.75rem; color: rgba(255, 255, 255, .4);">
+      Diseño web por <a href="#" style="color: rgba(255, 255, 255, .6);">Manuel Márquez</a>
+    </div>
   </footer>
 
   <!-- ── WA FLOAT ──────────────────────────────────── -->
-  <a href="https://wa.me/5492964630915" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="WhatsApp"
-    id="wa-float-btn">
+  <a href="https://wa.me/5493517177784" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="WhatsApp"
+    id="wa-float-btn" onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'flotante'});">
     <i aria-hidden="true" class="fa-brands fa-whatsapp"></i>
   </a>
 
@@ -1853,7 +2012,7 @@
       });
 
       // Smooth nav links (mobile fallback)
-      document.querySelectorAll('a[href^="#"]').forEach(a => {
+      document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(a => {
         a.addEventListener('click', e => {
           const target = document.querySelector(a.getAttribute('href'));
           if (target) {
